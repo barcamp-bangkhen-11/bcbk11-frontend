@@ -39,7 +39,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       className={
-        "relative z-0 " +
+        "relative z-0 py-20 " +
         (flexColCenter
           ? "flex min-h-screen flex-col items-center justify-center text-center "
           : "") +
