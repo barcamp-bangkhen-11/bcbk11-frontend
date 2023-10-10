@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Barcamp Bangkhen 11" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen bg-[#262329] text-white">
+      <main className="min-h-screen overflow-hidden bg-[#262329] text-white">
         <Navbar />
         <Hero />
         <Sponsor />

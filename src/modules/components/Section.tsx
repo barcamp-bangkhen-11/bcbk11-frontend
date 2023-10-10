@@ -39,8 +39,10 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       className={
-        "min-h-screen " +
-        (flexColCenter ? "flex flex-col items-center justify-center " : "") +
+        "relative z-0 " +
+        (flexColCenter
+          ? "flex min-h-screen flex-col items-center justify-center text-center "
+          : "") +
         (mockBorderPlsRemove ? "border-2 border-emerald-500 " : "")
       }
       id={id}

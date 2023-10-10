@@ -3,7 +3,7 @@ import { sections } from "../components/Section";
 
 const Navbar = () => {
   return (
-    <div className="fixed left-0 top-0 flex h-20 w-full items-center justify-between bg-[#2623294D] px-12 py-6">
+    <div className="fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between bg-[#2623294D] px-12 py-6">
       <a href={`#${sections.hero.id}`} className="text-[28px]">
         Logo
       </a>
