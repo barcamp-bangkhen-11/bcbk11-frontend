@@ -5,3 +5,32 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom Scrollbar Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(63, 59, 67) rgb(38, 35, 41);
+}
+
+/* Custom Scrollbar Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(63, 59, 67);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(18, 17, 20);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(19, 18, 20);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgb(11, 10, 12);
+}
