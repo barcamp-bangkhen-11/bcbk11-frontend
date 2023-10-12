@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "../components/Section";
 import Flare from "../components/Flare";
+import Image from "next/image";
 
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -9,39 +10,26 @@ const About = () => {
   return (
     <div className={inter.className}>
       <Section id="about">
-        <Flare positionX="right" positionY="center" />
+        <h1 className="text-[60px] font-normal text-white md:pl-10 pl-[10vw] lg:pl-[10vw] lg:w-full lg:text-[84px]">
+              What is BarCamp</h1>
 
-        <div className="inline-flex flex-col items-start justify-start gap-16 p-4 lg:p-0 lg:pl-20">
-          <h1 className="lg:text-[84px] text-[60px] font-normal text-white w-[262px] h-[146px] lg:w-full">
-            What is BarCamp
-          </h1>
-          {/* ----------------------------- */} 
-          {/* ใส่ ตรงนี้ */}
-          <div className="lg:gap-16 flex lg:flex-row flex-col items-start justify-start">
-            <div>
-              <svg
-                className="lg:mb-24"
-                width="80"
-                height="80"
-                viewBox="0 0 80 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="MegaphoneSimple">
-                  <path
-                    id="Vector"
-                    d="M68.9187 27.0824L13.9 10.2074C13.1553 9.99025 12.3703 9.9493 11.6071 10.0878C10.8439 10.2263 10.1233 10.5405 9.5025 11.0056C8.88165 11.4706 8.37751 12.0737 8.02996 12.7672C7.68241 13.4607 7.50097 14.2255 7.5 15.0012V60.0012C7.5 61.3273 8.02678 62.5991 8.96447 63.5367C9.90215 64.4744 11.1739 65.0012 12.5 65.0012C12.9781 65.0014 13.4538 64.933 13.9125 64.7981L40 56.7918V60.0012C40 61.3273 40.5268 62.5991 41.4645 63.5367C42.4021 64.4744 43.6739 65.0012 45 65.0012H55C56.3261 65.0012 57.5979 64.4744 58.5355 63.5367C59.4732 62.5991 60 61.3273 60 60.0012V50.6575L68.9187 47.9231C69.951 47.6129 70.8562 46.9793 71.501 46.1157C72.1458 45.252 72.496 44.204 72.5 43.1262V31.8762C72.4953 30.7989 72.1448 29.7516 71.5001 28.8886C70.8553 28.0256 69.9505 27.3924 68.9187 27.0824ZM55 60.0012H45V55.2575L55 52.1887V60.0012ZM67.5 43.1262H67.4656L45 50.0262V24.9731L67.4656 31.8762H67.5V43.1262Z"
-                    fill="white"
-                  />
-                </g>
-              </svg>
-            </div>
+        <div className="inline-flex flex-col items-start justify-start marker:gap-6 pl-10 pr-10 pt-10 md:pl-10 lg:p-4 lg:pl-[10vw] lg:pr-[10vw] w-full">
+          {/* ------------------------------------------------ */}
+          <div className="flex flex-col items-start justify-start lg:flex-row  min-h-fit lg:gap-16 " >
+              <Image
+                src="/images/MegaphoneSimple.svg"
+                width={80}
+                height={80}
+                className="lg:mb-24 lg:ml-24 ml-0"
+                alt="MegaphoneSimple Icon"
+              />
+
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="lg:text-[48px] text-[30px]">Vote to Listen.</h2>
+                <h2 className="text-[30px] lg:text-[48px]">Vote to Listen.</h2>
               </div>
               <div className=" text-xl text-left font-normal text-rose-100 ">
-                <p className="max-w-screen text-[16px] lg:w-[873px] lg:h-[72px] lg:text-[20px]">
+                <p className="text-[16px] lg:h-[72px] lg:text-[20px] md:w-auto">
                   BarCamp is a conference where people exchange experiences and
                   stories, without a centric theme. Speakers are to present
                   their topics, while listeners are to vote for their
@@ -50,34 +38,25 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* --------------------------- */}
-
-          <div className="flex lg:flex-row flex-col items-start justify-start lg:gap-16">
-            <svg
-              width="80"
-              height="80"
-              viewBox="0 0 80 80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="lg:mb-24"
-            >
-              <g id="ChatsCircle">
-                <path
-                  id="Vector"
-                  d="M72.4348 58.5397C74.1979 54.9557 75.0767 51.0013 74.9974 47.0079C74.9181 43.0144 73.8831 39.0981 71.979 35.5869C70.075 32.0756 67.3574 29.0717 64.0537 26.8267C60.7501 24.5817 56.9566 23.161 52.991 22.6835C51.6759 19.6176 49.7604 16.846 47.3574 14.5319C44.9545 12.2178 42.1127 10.408 38.9995 9.20921C35.8863 8.01041 32.5646 7.44682 29.2302 7.55165C25.8958 7.65648 22.6161 8.42761 19.5843 9.8196C16.5526 11.2116 13.8301 13.1963 11.5772 15.6568C9.32441 18.1172 7.5868 21.0037 6.4668 24.1461C5.3468 27.2885 4.86706 30.6233 5.05584 33.954C5.24463 37.2847 6.09812 40.544 7.56604 43.5397L5.17229 51.921C4.95868 52.6708 4.94933 53.4641 5.14518 54.2187C5.34104 54.9733 5.735 55.6619 6.28629 56.2132C6.83758 56.7645 7.52618 57.1585 8.28082 57.3543C9.03546 57.5502 9.82873 57.5408 10.5785 57.3272L18.9598 54.9335C21.4889 56.1752 24.2094 56.9813 27.0067 57.3178C28.3401 60.4419 30.2962 63.2614 32.7555 65.6044C35.2148 67.9474 38.1257 69.7646 41.3107 70.9452C44.4957 72.1258 47.8878 72.6449 51.28 72.471C54.6723 72.297 57.9935 71.4336 61.041 69.9335L69.4223 72.3272C70.1721 72.5408 70.9654 72.5502 71.72 72.3543C72.4747 72.1585 73.1632 71.7645 73.7145 71.2132C74.2658 70.6619 74.6598 69.9733 74.8556 69.2187C75.0515 68.4641 75.0421 67.6708 74.8285 66.921L72.4348 58.5397ZM67.3535 58.9585L69.7129 67.2116L61.4598 64.8522C60.831 64.6754 60.158 64.7517 59.5848 65.0647C54.9763 67.5719 49.5678 68.1698 44.523 66.7298C39.4782 65.2898 35.2003 61.9269 32.6098 57.3647C36.0331 57.0082 39.3457 55.9481 42.34 54.2508C45.3342 52.5535 47.9453 50.2558 50.0096 47.5017C52.0738 44.7476 53.5466 41.5967 54.3355 38.2465C55.1245 34.8963 55.2125 31.4193 54.5942 28.0335C57.5899 28.7395 60.3822 30.1273 62.7538 32.089C65.1254 34.0506 67.0122 36.5332 68.2675 39.3433C69.5227 42.1535 70.1124 45.2154 69.9908 48.2908C69.8691 51.3661 69.0394 54.3719 67.566 57.0741C67.2505 57.6499 67.1742 58.3268 67.3535 58.9585Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
+          {/* ---------------------------------------------------------------- */}
+          <div className="w-10 h-10"></div>
+          <div className="flex flex-col items-start justify-start lg:flex-row lg:gap-16">
+            <Image
+              src="/images/ChatsCircle.svg"
+              width={80}
+              height={80}
+              className="lg:mb-24 lg:ml-24 ml-0"
+              alt="ChatsCircle Icon"
+            />
 
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="lg:text-[48px] text-[30px]">
+                <h2 className="text-[30px] lg:text-[48px]">
                   Exchange Stories. Create New Vision.
                 </h2>
-              </div> 
-              <div className="text-xl text-left font-normal text-rose-100">
-                <p className="max-w-screen text-[16px] lg:w-[873px] lg:h-[72px] lg:text-[20px]">
+              </div>
+              <div className="text-xl text-left md:w-auto md:h-auto font-normal text-rose-100">
+                <p className="text-[16px] lg:h-[72px] lg:text-[20px] md:w-auto">
                   BarCamp is where people gather to share their ideologies, and
                   with those ideas; new visions and innovations will come to
                   blossom into new projects.
@@ -87,32 +66,25 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex lg:flex-row  flex-col items-start justify-start lg:gap-16">
-            <svg
-              width="80"
-              height="80"
-              viewBox="0 0 80 80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="lg:mb-24"
-            >
-              <g id="UsersThree">
-                <path
-                  id="Vector"
-                  d="M20.0375 46.1886C20.046 46.3579 20.02 46.5272 19.9609 46.6862C19.9019 46.8451 19.8112 46.9904 19.6943 47.1132C19.5773 47.2359 19.4367 47.3336 19.2808 47.4003C19.1249 47.467 18.9571 47.5013 18.7875 47.5011H5.00003C4.43577 47.5019 3.88781 47.3119 3.44526 46.9618C3.00272 46.6118 2.69161 46.1223 2.56253 45.573C2.48216 45.197 2.48587 44.8079 2.57338 44.4335C2.6609 44.0591 2.83007 43.7087 3.06878 43.4073C5.27444 40.4823 8.20094 38.1792 11.5625 36.723C10.0867 35.3773 8.95474 33.6977 8.26152 31.8246C7.5683 29.9516 7.33399 27.9397 7.5782 25.9575C7.82241 23.9753 8.53804 22.0804 9.66516 20.4317C10.7923 18.7829 12.298 17.4282 14.0564 16.481C15.8147 15.5339 17.7744 15.0218 19.7713 14.9878C21.7682 14.9537 23.7442 15.3987 25.5338 16.2853C27.3234 17.172 28.8745 18.4746 30.0572 20.084C31.2398 21.6934 32.0196 23.5627 32.3313 25.5355C32.3715 25.8007 32.324 26.0719 32.196 26.3077C32.0679 26.5435 31.8663 26.731 31.6219 26.8417C28.1544 28.4448 25.2177 31.0062 23.1585 34.2238C21.0992 37.4414 20.0033 41.1809 20 45.0011C20 45.4011 20 45.7948 20.0375 46.1886ZM76.9125 43.4042C74.712 40.4825 71.7922 38.1807 68.4375 36.723C69.9134 35.3773 71.0453 33.6977 71.7385 31.8246C72.4318 29.9516 72.6661 27.9397 72.4219 25.9575C72.1777 23.9753 71.462 22.0804 70.3349 20.4317C69.2078 18.7829 67.702 17.4282 65.9437 16.481C64.1854 15.5339 62.2257 15.0218 60.2288 14.9878C58.2318 14.9537 56.2558 15.3987 54.4662 16.2853C52.6766 17.172 51.1256 18.4746 49.9429 20.084C48.7602 21.6934 47.9804 23.5627 47.6688 25.5355C47.6285 25.8007 47.6761 26.0719 47.8041 26.3077C47.9322 26.5435 48.1337 26.731 48.3782 26.8417C51.8457 28.4448 54.7823 31.0062 56.8416 34.2238C58.9008 37.4414 59.9967 41.1809 60 45.0011C60 45.4011 60 45.7948 59.9625 46.1886C59.9541 46.3579 59.9801 46.5272 60.0391 46.6862C60.0981 46.8451 60.1889 46.9904 60.3058 47.1132C60.4227 47.2359 60.5634 47.3336 60.7193 47.4003C60.8752 47.467 61.043 47.5013 61.2125 47.5011H75C75.5643 47.5019 76.1123 47.3119 76.5548 46.9618C76.9974 46.6118 77.3085 46.1223 77.4375 45.573C77.5184 45.1963 77.5147 44.8064 77.4266 44.4313C77.3385 44.0563 77.1683 43.7055 76.9282 43.4042H76.9125ZM49.1 56.898C51.5892 54.9916 53.4185 52.3532 54.3308 49.3535C55.243 46.3538 55.1924 43.1436 54.1859 40.1742C53.1795 37.2048 51.2679 34.6253 48.7197 32.7985C46.1716 30.9716 43.1151 29.9891 39.9797 29.9891C36.8444 29.9891 33.7878 30.9716 31.2397 32.7985C28.6916 34.6253 26.78 37.2048 25.7735 40.1742C24.7671 43.1436 24.7164 46.3538 25.6287 49.3535C26.5409 52.3532 28.3702 54.9916 30.8594 56.898C26.4423 58.8118 22.754 62.0895 20.3344 66.2511C20.115 66.6312 19.9994 67.0623 19.9995 67.5012C19.9995 67.9401 20.1151 68.3713 20.3346 68.7513C20.554 69.1314 20.8697 69.447 21.2498 69.6664C21.63 69.8857 22.0611 70.0012 22.5 70.0011H57.5C57.9389 70.0012 58.3701 69.8857 58.7502 69.6664C59.1304 69.447 59.446 69.1314 59.6655 68.7513C59.885 68.3713 60.0006 67.9401 60.0006 67.5012C60.0006 67.0623 59.8851 66.6312 59.6657 66.2511C57.2409 62.0868 53.5457 58.8088 49.1219 56.898H49.1Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
+          <div className="w-10 h-10"></div>
+
+          <div className="flex flex-col  items-start justify-start lg:flex-row lg:gap-16">
+            <Image
+                src="/images/UsersThree.svg"
+                width={80}
+                height={80}
+                className="lg:mb-24 lg:ml-24 ml-0"
+                alt="UsersThree Icon"
+              />
 
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="lg:text-[48px] text-[30px]">
-                  Different Thoughts, Different Thinking.
+                <h2 className="text-[30px] lg:text-[48px]">
+                  Different Thoughts. Different Thinking.
                 </h2>
               </div>
               <div className="text-xl text-left font-normal text-rose-100 ">
-                <p className="max-w-screen text-[16px] lg:w-[873px] lg:h-[72px] lg:text-[20px]">
+                <p className="text-[16px] lg:h-[72px] lg:text-[20px] md:w-auto">
                   BarCamp is a place for people with diverse thoughts and
                   visionaries. We believed in our philosophy that within the
                   place and time, people will get to know and understand each
