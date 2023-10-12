@@ -73,7 +73,7 @@ const Gallery = () => {
     },
   ] as const;
   return (
-    <Section id="gallery" flexColCenter mockBorderPlsRemove>
+    <Section id="gallery" flexColCenter>
       <h2 className="mb-8 text-left text-mobile-h2 md:text-center md:text-desktop-h1">
         Glance of the Past
       </h2>

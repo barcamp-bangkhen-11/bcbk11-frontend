@@ -30,9 +30,7 @@ const Flare: React.FC<FlareProps> = ({ positionX, positionY }) => {
             ? "50%"
             : positionX,
       }}
-    >
-      Flare
-    </div>
+    />
   );
 };
 
