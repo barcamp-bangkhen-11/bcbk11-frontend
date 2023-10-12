@@ -28,6 +28,7 @@ type SectionProps = {
   children: React.ReactNode;
   flexColCenter?: boolean;
   mockBorderPlsRemove?: boolean;
+  noPadding?: boolean;
 };
 
 const Section: React.FC<SectionProps> = ({
@@ -35,11 +36,13 @@ const Section: React.FC<SectionProps> = ({
   children,
   flexColCenter,
   mockBorderPlsRemove,
+  noPadding,
 }) => {
   return (
     <section
       className={
-        "relative z-0 py-20 " +
+        "relative z-0 " +
+        (noPadding ? "" : "py-20 ") +
         (flexColCenter
           ? "flex min-h-screen flex-col items-center justify-center text-center "
           : "") +
