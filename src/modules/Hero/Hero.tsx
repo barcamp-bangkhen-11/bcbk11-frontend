@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../components/Section";
 import Flare from "../components/Flare";
 import Image from "next/image";
-import barcampHero from "../../../public/images/barcampHero.png";
 import { useState } from "react";
 import { useEffect } from "react";
 import Link from "next/link";
@@ -16,10 +15,10 @@ const Hero = () => {
     minutes: string;
     seconds: string;
   }>({
-    days: "0",
-    hours: "0",
-    minutes: "0",
-    seconds: "0",
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
   });
 
   useEffect(() => {
@@ -48,7 +47,7 @@ const Hero = () => {
         clearInterval(intervalId);
         setCountdown({ days: "00", hours: "00", minutes: "00", seconds: "00" });
       }
-    }, 1000);
+    });
 
     return () => clearInterval(intervalId);
   }, []);
@@ -66,7 +65,9 @@ const Hero = () => {
           <div className="mt-8 flex  flex-row flex-wrap  items-center justify-center">
             <Image
               className="h-[382px] w-[382px] md:h-[418px] md:w-[433px] "
-              src={barcampHero}
+              src="/images/barcampHero.png"
+              width={433}
+              height={418}
               alt="barcamp"
             />
 
