@@ -12,7 +12,7 @@ const Flare: React.FC<FlareProps> = ({ positionX, positionY }) => {
       style={{
         background:
           "radial-gradient(100.79% 116.37% at 48.85% -9.6%, #9B64C6 37.16%, #FC7869 43.23%, #F5AE52 85.9%)",
-        transform: `translate( -50%, -50%)`,
+        transform: `translate3d( -50%, -50%,0)`,
         top:
           positionY === "top"
             ? "0%"
@@ -30,9 +30,7 @@ const Flare: React.FC<FlareProps> = ({ positionX, positionY }) => {
             ? "50%"
             : positionX,
       }}
-    >
-      Flare
-    </div>
+    />
   );
 };
 
