@@ -17,7 +17,7 @@ const Question = () => {
         <h1 className="pb-[6vh] pl-[10vw] text-mobile-h1 font-normal text-white md:pl-10 lg:w-full lg:pl-[10vw] lg:text-desktop-h1">
           Q&A
         </h1>
-        <div className="flex flex-col gap-[60px]">
+        <div className="flex flex-col gap-[36px]">
           <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
             <div className="item-center flex flex-row pb-[24px]">
               <Image
