@@ -7,7 +7,7 @@ import { scheduleList } from "./ScheduleList";
 
 const Schedule = () => {
   return (
-    <Section id="schedule" flexColCenter mockBorderPlsRemove>
+    <Section id="schedule" flexColCenter>
       <Flare positionX="center" positionY="60%" />
 
       <h1 className="mb-10 bg-transparent text-mobile-h1 lg:text-desktop-h1">
