@@ -5,6 +5,12 @@
 html {
   scroll-behavior: smooth;
   background-color: #262329;
+  color: white;
+  overflow-x: hidden;
+}
+
+#__next {
+  overflow: clip;
 }
 
 /* Custom Scrollbar Works on Firefox */

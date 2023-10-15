@@ -12,16 +12,14 @@ export default function Home() {
   return (
     <>
       <CustomHead />
-      <main className="min-h-screen overflow-hidden bg-[#262329] text-white">
-        <Navbar />
-        <Hero />
-        <Sponsor />
-        <About />
-        <Gallery />
-        <Schedule />
-        <Question />
-        <Footer />
-      </main>
+      <Navbar />
+      <Hero />
+      <Sponsor />
+      <About />
+      <Gallery />
+      <Schedule />
+      <Question />
+      <Footer />
     </>
   );
 }
