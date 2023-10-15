@@ -30,15 +30,15 @@ const Question = () => {
                 height={32}
                 onClick={() => setIsRoatate(!isRoatate)}
               />
-              <h2 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
+              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
                 How many topics will be chosen for each session?
-              </h2>
+              </h4>
             </div>
-            <h2 className="pt-[24px]">
+            <div className="pt-[24px] font-normal text-xl">
               {isRoatate
                 ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quod fugit repudiandae tenetur! Alias porro sunt cum nostrum, iusto voluptatum. Eos quam, fuga aliquam tempore labore voluptates. Quod, iusto ullam!"
                 : ""}
-            </h2>
+            </div>
           </div>
           {/* --------------------------------------------------------------- */}
           <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
@@ -53,15 +53,15 @@ const Question = () => {
                 height={32}
                 onClick={() => setIsRoatate2(!isRoatate2)}
               />
-              <h2 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
+              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
                 How to travel to the event venue?
-              </h2>
+              </h4>
             </div>
-            <h2 className="pt-[24px]">
+            <div className="pt-[24px] font-normal text-xl">
               {isRoatate2
                 ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolore vel quia deleniti neque fuga, nisi accusantium deserunt tenetur modi atque totam ratione exercitationem. Doloremque illum aliquam quam in numquam."
                 : ""}
-            </h2>
+            </div>
           </div>
           {/* --------------------------------------------------------------- */}
           <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
@@ -76,15 +76,15 @@ const Question = () => {
                 height={32}
                 onClick={() => setIsRoatate3(!isRoatate3)}
               />
-              <h2 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
+              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
                 Are there any parking spots available around the venue?
-              </h2>
+              </h4>
             </div>
-            <h2 className="pt-[24px] ">
+            <div className="pt-[24px] font-normal text-xl ">
               {isRoatate3
                 ? "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente amet, in aliquam maxime animi possimus numquam hic nam unde laudantium odit enim ipsa ad optio eos itaque nulla delectus?"
                 : ""}
-            </h2>
+            </div>
           </div>
         </div>
       </Section>
