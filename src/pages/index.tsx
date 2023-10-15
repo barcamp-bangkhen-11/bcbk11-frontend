@@ -14,13 +14,13 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <CustomHead />
-      <main
-        className={
-          "min-h-screen overflow-hidden bg-[#262329] text-white " +
-          inter.className
+      <style jsx global>{`
+        html {
+          font-family: ${inter.style.fontFamily};
         }
-      >
+      `}</style>
+      <CustomHead />
+      <main className={"min-h-screen overflow-hidden bg-[#262329] text-white"}>
         <Navbar />
         <Hero />
         <Sponsor />
