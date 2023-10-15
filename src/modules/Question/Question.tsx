@@ -7,9 +7,26 @@ import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 const Question = () => {
-  const [isRoatate, setIsRoatate] = useState(false);
-  const [isRoatate2, setIsRoatate2] = useState(false);
-  const [isRoatate3, setIsRoatate3] = useState(false);
+  const [openQuestion, setOpenQuestion] = useState<string[]>([]);
+
+  const data = [
+    {
+      question: "How many topics will be chosen for each session?",
+      answer:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quod fugit repudiandae tenetur! Alias porro sunt cum nostrum, iusto voluptatum. Eos quam, fuga aliquam tempore labore voluptates. Quod, iusto ullam!",
+    },
+    {
+      question: "How to travel to the event venue?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolore vel quia deleniti neque fuga, nisi accusantium deserunt tenetur modi atque totam ratione exercitationem. Doloremque illum aliquam quam in numquam.",
+    },
+    {
+      question: "Are there any parking spots available around the venue?",
+      answer:
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente amet, in aliquam maxime animi possimus numquam hic nam unde laudantium odit enim ipsa ad optio eos itaque nulla delectus?",
+    },
+  ];
+
   return (
     <div className={inter.className}>
       <Section id="questions">
@@ -18,74 +35,43 @@ const Question = () => {
           Q&A
         </h1>
         <div className="flex flex-col gap-[36px]">
-          <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
-            <div className="item-center flex flex-row pb-[24px]">
-              <Image
-                className={`h-[32px] w-[32px] transition duration-150 ease-in-out focus:-rotate-180 ${
-                  isRoatate ? "rotate-180" : "rotate-0"
-                }`}
-                src={"/images/QAndADropdown.svg"}
-                alt="Q&A Dropdown"
-                width={32}
-                height={32}
-                onClick={() => setIsRoatate(!isRoatate)}
-              />
-              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
-                How many topics will be chosen for each session?
-              </h4>
+          {data.map((item) => (
+            <div
+              key={item.question}
+              className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]"
+            >
+              <div
+                className="item-center flex cursor-pointer flex-row pb-[24px]"
+                onClick={() => {
+                  if (openQuestion.includes(item.question)) {
+                    setOpenQuestion(
+                      openQuestion.filter((q) => q !== item.question),
+                    );
+                  } else {
+                    setOpenQuestion([...openQuestion, item.question]);
+                  }
+                }}
+              >
+                <Image
+                  className={`h-[32px] w-[32px] transition duration-150 ease-in-out focus:-rotate-180 ${
+                    openQuestion.includes(item.question)
+                      ? "rotate-180"
+                      : "rotate-0"
+                  }`}
+                  src={"/images/QAndADropdown.svg"}
+                  alt="Q&A Dropdown"
+                  width={32}
+                  height={32}
+                />
+                <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
+                  {item.question}
+                </h4>
+              </div>
+              <p className="pt-[24px] text-mobile-body font-normal">
+                {openQuestion.includes(item.question) ? item.answer : ""}
+              </p>
             </div>
-            <p className="pt-[24px] font-normal text-mobile-body">
-              {isRoatate
-                ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quod fugit repudiandae tenetur! Alias porro sunt cum nostrum, iusto voluptatum. Eos quam, fuga aliquam tempore labore voluptates. Quod, iusto ullam!"
-                : ""}
-            </p>
-          </div>
-          {/* --------------------------------------------------------------- */}
-          <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
-            <div className="item-center flex flex-row pb-[24px]">
-              <Image
-                className={`h-[32px] w-[32px] transition duration-150 ease-in-out focus:-rotate-180 ${
-                  isRoatate2 ? "rotate-180" : "rotate-0"
-                }`}
-                src={"/images/QAndADropdown.svg"}
-                alt="Q&A Dropdown"
-                width={32}
-                height={32}
-                onClick={() => setIsRoatate2(!isRoatate2)}
-              />
-              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
-                How to travel to the event venue?
-              </h4>
-            </div>
-            <p className="pt-[24px] font-normal text-mobile-body">
-              {isRoatate2
-                ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolore vel quia deleniti neque fuga, nisi accusantium deserunt tenetur modi atque totam ratione exercitationem. Doloremque illum aliquam quam in numquam."
-                : ""}
-            </p>
-          </div>
-          {/* --------------------------------------------------------------- */}
-          <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
-            <div className="item-center flex flex-row pb-[24px]">
-              <Image
-                className={`h-[32px] w-[32px] transition duration-150 ease-in-out focus:-rotate-180 ${
-                  isRoatate3 ? "rotate-180" : "rotate-0"
-                }`}
-                src={"/images/QAndADropdown.svg"}
-                alt="Q&A Dropdown"
-                width={32}
-                height={32}
-                onClick={() => setIsRoatate3(!isRoatate3)}
-              />
-              <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
-                Are there any parking spots available around the venue?
-              </h4>
-            </div>
-            <p className="pt-[24px] font-normal text-mobile-body ">
-              {isRoatate3
-                ? "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente amet, in aliquam maxime animi possimus numquam hic nam unde laudantium odit enim ipsa ad optio eos itaque nulla delectus?"
-                : ""}
-            </p>
-          </div>
+          ))}
         </div>
       </Section>
     </div>
