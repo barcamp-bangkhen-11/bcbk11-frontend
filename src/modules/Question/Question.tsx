@@ -34,11 +34,11 @@ const Question = () => {
                 How many topics will be chosen for each session?
               </h4>
             </div>
-            <div className="pt-[24px] font-normal text-xl">
+            <p className="pt-[24px] font-normal text-mobile-body">
               {isRoatate
                 ? "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quod fugit repudiandae tenetur! Alias porro sunt cum nostrum, iusto voluptatum. Eos quam, fuga aliquam tempore labore voluptates. Quod, iusto ullam!"
                 : ""}
-            </div>
+            </p>
           </div>
           {/* --------------------------------------------------------------- */}
           <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
@@ -57,11 +57,11 @@ const Question = () => {
                 How to travel to the event venue?
               </h4>
             </div>
-            <div className="pt-[24px] font-normal text-xl">
+            <p className="pt-[24px] font-normal text-mobile-body">
               {isRoatate2
                 ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolore vel quia deleniti neque fuga, nisi accusantium deserunt tenetur modi atque totam ratione exercitationem. Doloremque illum aliquam quam in numquam."
                 : ""}
-            </div>
+            </p>
           </div>
           {/* --------------------------------------------------------------- */}
           <div className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]">
@@ -80,11 +80,11 @@ const Question = () => {
                 Are there any parking spots available around the venue?
               </h4>
             </div>
-            <div className="pt-[24px] font-normal text-xl ">
+            <p className="pt-[24px] font-normal text-mobile-body ">
               {isRoatate3
                 ? "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sapiente amet, in aliquam maxime animi possimus numquam hic nam unde laudantium odit enim ipsa ad optio eos itaque nulla delectus?"
                 : ""}
-            </div>
+            </p>
           </div>
         </div>
       </Section>
