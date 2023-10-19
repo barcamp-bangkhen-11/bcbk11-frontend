@@ -14,7 +14,7 @@ const Schedule = () => {
     <Section id="schedule" flexColCenter>
       <Flare positionX="center" positionY="60%" />
 
-      <h1 className="mb-10 bg-transparent text-mobile-h1 lg:text-desktop-h1">
+      <h1 className="mb-[6vh] bg-transparent text-mobile-h1 lg:text-desktop-h1">
         Schedule
       </h1>
       <div className="w-full lg:max-w-[1440px]">

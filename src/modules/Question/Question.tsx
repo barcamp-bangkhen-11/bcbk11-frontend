@@ -41,7 +41,7 @@ const Question = () => {
               className="flex flex-col divide-y-2 divide-white/[.36] pl-[10vw] pr-[10vw]"
             >
               <div
-                className="item-center flex cursor-pointer flex-row pb-[24px]"
+                className="flex cursor-pointer flex-row items-center pb-[24px] align-middle"
                 onClick={() => {
                   if (openQuestion.includes(item.question)) {
                     setOpenQuestion(
@@ -63,7 +63,7 @@ const Question = () => {
                   width={32}
                   height={32}
                 />
-                <h4 className="pl-[8px] text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
+                <h4 className="pl-5 text-mobile-h4 font-normal text-white lg:w-full lg:text-desktop-h4">
                   {item.question}
                 </h4>
               </div>

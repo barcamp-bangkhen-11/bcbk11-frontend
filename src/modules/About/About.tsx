@@ -13,7 +13,7 @@ const About = () => {
           What is BarCamp
         </h1>
 
-        <div className="inline-flex w-full flex-col items-start justify-start pl-10 pr-10 pt-10 marker:gap-6 md:pl-10 lg:p-4 lg:pl-[10vw] lg:pr-[10vw]">
+        <div className="inline-flex w-full flex-col items-start justify-start pl-10 pr-10 pt-[6vh] marker:gap-6 md:pl-10 lg:p-4 lg:pl-[10vw] lg:pr-[10vw]">
           {/* ------------------------------------------------ */}
           <div className="flex min-h-fit flex-col items-start justify-start  lg:flex-row lg:gap-16 ">
             <Image
@@ -26,7 +26,7 @@ const About = () => {
 
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="text-mobile-h1 lg:text-desktop-h3">
+                <h2 className="text-mobile-h2 lg:text-desktop-h3">
                   Vote to Listen.
                 </h2>
               </div>
@@ -53,7 +53,7 @@ const About = () => {
 
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="text-mobile-h1 lg:text-desktop-h3">
+                <h2 className="text-mobile-h2 lg:text-desktop-h3">
                   Exchange Stories. Create New Vision.
                 </h2>
               </div>
@@ -80,7 +80,7 @@ const About = () => {
 
             <div className="inline-flex max-w-fit flex-col items-start justify-start gap-4">
               <div className="text-5xl font-normal text-white">
-                <h2 className="text-mobile-h1 lg:text-desktop-h3">
+                <h2 className="text-mobile-h2 lg:text-desktop-h3">
                   Different Thoughts. Different Thinking.
                 </h2>
               </div>
