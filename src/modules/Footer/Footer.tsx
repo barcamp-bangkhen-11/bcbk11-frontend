@@ -9,26 +9,30 @@ const Footer = () => {
   50 Ngamwongwan St., Lat Yao, Chatuchak, Bangkok 10900`;
 
   const contact = [
-    {
-      title: "email",
-      image: "/images/EnvelopeSimple.svg",
-      href: "",
-    },
-    {
-      title: "tiktok",
-      image: "/images/TiktokLogo.svg",
-      href: "",
-    },
-    {
-      title: "instagram",
-      image: "/images/InstagramLogo.svg",
-      href: "",
-    },
-    {
-      title: "facebook",
-      image: "/images/FacebookLogo.svg",
-      href: "",
-    },
+    [
+      {
+        title: "email",
+        image: "/images/EnvelopeSimple.svg",
+        href: "",
+      },
+      {
+        title: "tiktok",
+        image: "/images/TiktokLogo.svg",
+        href: "",
+      },
+    ],
+    [
+      {
+        title: "instagram",
+        image: "/images/InstagramLogo.svg",
+        href: "",
+      },
+      {
+        title: "facebook",
+        image: "/images/FacebookLogo.svg",
+        href: "",
+      },
+    ],
   ] as const;
 
   return (
@@ -53,16 +57,20 @@ const Footer = () => {
           </div>
           <div>
             <div className="flex flex-wrap justify-end gap-4">
-              {contact.map(({ title, image, href }) => (
-                <Link href={href} key={title}>
-                  <Image
-                    className="h-[32px] w-[32px] object-contain hover:opacity-50 md:h-[54px] md:w-[54px]"
-                    src={image}
-                    alt={title}
-                    width={54}
-                    height={54}
-                  />
-                </Link>
+              {contact.map((pair, idx) => (
+                <div key={idx} className="flex flex-wrap gap-4">
+                  {pair.map(({ title, image, href }) => (
+                    <Link href={href} key={title}>
+                      <Image
+                        className="h-[32px] w-[32px] object-contain hover:opacity-50 md:h-[54px] md:w-[54px]"
+                        src={image}
+                        alt={title}
+                        width={54}
+                        height={54}
+                      />
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
             <p className="mt-10 hidden text-end text-desktop-sub text-[#B6B6B6] md:block">
