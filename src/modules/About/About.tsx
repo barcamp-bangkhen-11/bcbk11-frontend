@@ -3,12 +3,14 @@ import Section from "../components/Section";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
+import Flare from "../components/Flare";
 const inter = Inter({ subsets: ["latin"] });
 
 const About = () => {
   return (
     <div className={inter.className}>
       <Section id="about">
+        <Flare positionX="center" positionY="center" />
         <h1 className="pl-[10vw] text-mobile-h1 font-normal text-white md:pl-10 lg:w-full lg:pl-[10vw] lg:text-desktop-h1">
           What is BarCamp
         </h1>
