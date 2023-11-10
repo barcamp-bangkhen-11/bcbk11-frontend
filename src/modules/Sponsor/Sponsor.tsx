@@ -7,65 +7,38 @@ const Sponsor = () => {
   const sponsors = {
     diamond: [
       {
-        name: "Mock sponsor 1",
-        image: "/images/sponsors/ku_logo.png",
+        name: "Cytron Technologies",
+        image: "/images/sponsors/[Diamond]Cytron TH Logo-01.png",
       },
       {
-        name: "Mock sponsor 2",
-        image: "/images/sponsors/ku_logo.png",
-      },
-      {
-        name: "Mock sponsor 3",
-        image: "/images/sponsors/ku_logo.png",
+        name: "Odd-e",
+        image: "/images/sponsors/[Diamond]Odd-e.png",
       },
     ],
     platinumAndGold: [
       {
-        name: "Mock sponsor 3",
-        image: "/images/sponsors/ku_logo.png",
-      },
-
-      {
-        name: "Mock sponsor 4",
-        image: "/images/sponsors/ku_logo.png",
-      },
-      {
-        name: "Mock sponsor 1",
-        image: "/images/sponsors/ku_logo.png",
-      },
-      {
-        name: "Mock sponsor 2",
-        image: "/images/sponsors/ku_logo.png",
+        name: "lnw shop",
+        image: "/images/sponsors/[Gold] logo_Lnw-01.png",
       },
     ],
     silverAndBronze: [
       {
-        name: "Mock sponsor 1",
-        image: "/images/sponsors/ku_logo.png",
-      },
-
-      {
-        name: "Mock sponsor 3",
-        image: "/images/sponsors/ku_logo.png",
-      },
-
-      {
-        name: "Mock sponsor 5",
-        image: "/images/sponsors/ku_logo.png",
+        name: "Exzy",
+        image: "/images/sponsors/[Silver] Logo Exzy_Horizon-01.png",
       },
       {
-        name: "Mock sponsor 4",
-        image: "/images/sponsors/ku_logo.png",
+        name: "Debuz",
+        image: "/images/sponsors/[Silver]debuz.png",
       },
       {
-        name: "Mock sponsor 2",
-        image: "/images/sponsors/ku_logo.png",
+        name: "LINE MAN Wongnai",
+        image: "/images/sponsors/[Bronze]LMWN-RGB-01.png",
       },
     ],
   };
   return (
     <Section noPadding>
-      <div className="mx-auto mb-4 flex w-full max-w-7xl flex-wrap justify-between px-4 md:px-12 lg:px-32">
+      <div className="mx-auto mb-4 flex w-full max-w-7xl justify-between px-4 md:px-12 lg:px-32">
         {sponsors.diamond.map((sponsor, idx) => (
           <Image
             key={sponsor.name + idx}
@@ -77,7 +50,7 @@ const Sponsor = () => {
           />
         ))}
       </div>
-      <div className="mx-auto mb-4 flex w-full max-w-7xl flex-wrap justify-between px-4 md:px-12 lg:px-32">
+      <div className="mx-auto mb-4 flex w-fit max-w-7xl flex-wrap justify-between  px-4 md:px-12 lg:px-32">
         {sponsors.platinumAndGold.map((sponsor, idx) => (
           <Image
             key={sponsor.name + idx}
