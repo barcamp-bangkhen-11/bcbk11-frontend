@@ -5,8 +5,8 @@ export default {
   theme: {
     screens: {
       // mobile
-      md: "768px", // tablet
-      lg: "1024px", // desktop
+      md: "850px", // tablet
+      lg: "1200px", // desktop
     },
     fontSize: {
       "desktop-h1": "84px",

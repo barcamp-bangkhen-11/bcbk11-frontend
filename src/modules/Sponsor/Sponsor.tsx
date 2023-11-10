@@ -34,6 +34,10 @@ const Sponsor = () => {
         name: "LINE MAN Wongnai",
         image: "/images/sponsors/[Bronze]LMWN-RGB-01-crop.png",
       },
+      {
+        name: "Gummy Bear",
+        image: "/images/sponsors/[Bronze]GummyBear_TechRecruitment-crop.png",
+      },
     ],
   };
   return (
@@ -63,7 +67,7 @@ const Sponsor = () => {
         ))}
       </div>
 
-      <div className="mx-auto hidden w-full max-w-7xl flex-wrap justify-evenly gap-4 px-4 md:flex md:px-12 lg:px-32">
+      <div className="mx-auto hidden w-full  justify-evenly gap-4 px-4 md:px-12 lg:flex lg:px-32">
         {sponsors.silverAndBronze.map((sponsor, idx) => (
           <Image
             key={sponsor.name + idx}
@@ -83,7 +87,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className="m-4 block h-16 w-auto object-contain object-center md:hidden md:h-24"
+            className="m-4 block h-16 w-auto object-contain object-center md:h-24 lg:hidden"
           />
         ))}
       </Marquee>
