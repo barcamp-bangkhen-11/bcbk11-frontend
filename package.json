@@ -15,6 +15,7 @@
     "react-chrono": "^2.3.1",
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.1",
+    "react-spring-lightbox": "^1.8.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
