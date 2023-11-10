@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../components/Section";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Flare from "../components/Flare";
 
 const Sponsor = () => {
   const sponsors = {

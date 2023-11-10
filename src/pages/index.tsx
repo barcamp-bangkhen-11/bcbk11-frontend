@@ -22,7 +22,7 @@ export default function Home() {
       <CustomHead />
       <Navbar />
       <Hero />
-      <Sponsor />
+      {/* <Sponsor /> */}
       <About />
       <Gallery />
       <Schedule />
