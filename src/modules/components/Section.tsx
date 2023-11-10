@@ -30,6 +30,7 @@ type SectionProps = {
   mockBorderPlsRemove?: boolean;
   noPadding?: boolean;
   bgImage?: boolean;
+  bgMonochrome?: string;
 };
 
 const Section: React.FC<SectionProps> = ({
@@ -39,6 +40,7 @@ const Section: React.FC<SectionProps> = ({
   mockBorderPlsRemove,
   noPadding,
   bgImage,
+  bgMonochrome,
 }) => {
   return (
     <section
@@ -49,6 +51,10 @@ const Section: React.FC<SectionProps> = ({
               backgroundSize: "cover",
               backgroundPosition: "center",
             }
+          : bgMonochrome
+          ? {
+              background: bgMonochrome,
+            }
           : {}
       }
       className={
@@ -57,7 +63,8 @@ const Section: React.FC<SectionProps> = ({
         (flexColCenter
           ? "flex min-h-screen flex-col items-center justify-center text-center "
           : "") +
-        (mockBorderPlsRemove ? "border-2 border-emerald-500 " : "")
+        (mockBorderPlsRemove ? "border-2 border-emerald-500 " : "") +
+        (bgMonochrome ? "mx-0 rounded-3xl md:mx-5" : "")
       }
       id={id}
     >
