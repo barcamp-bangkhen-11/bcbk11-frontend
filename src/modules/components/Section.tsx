@@ -29,6 +29,7 @@ type SectionProps = {
   flexColCenter?: boolean;
   mockBorderPlsRemove?: boolean;
   noPadding?: boolean;
+  bgImage?: boolean;
 };
 
 const Section: React.FC<SectionProps> = ({
@@ -37,9 +38,19 @@ const Section: React.FC<SectionProps> = ({
   flexColCenter,
   mockBorderPlsRemove,
   noPadding,
+  bgImage,
 }) => {
   return (
     <section
+      style={
+        bgImage
+          ? {
+              backgroundImage: `url("/images/hero_bg.png")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }
+          : {}
+      }
       className={
         "relative " +
         (noPadding ? "" : "py-20 ") +
@@ -51,6 +62,18 @@ const Section: React.FC<SectionProps> = ({
       id={id}
     >
       {children}
+      {bgImage && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            background:
+              "linear-gradient(0deg, #262329 -5%, rgba(38, 35, 41, 0.00) 100%)",
+            width: "100%",
+            height: "371px",
+          }}
+        />
+      )}
     </section>
   );
 };
