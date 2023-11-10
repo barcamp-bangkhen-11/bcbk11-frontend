@@ -10,44 +10,52 @@ const inter = Inter({ subsets: ["latin"] });
 const Question = () => {
   const [openQuestion, setOpenQuestion] = useState<string[]>([]);
 
-  const images = [
-    {
-      src: "/images/qna/1.png",
-      alt: "Q&A 1",
-    },
-    {
-      src: "/images/qna/2.png",
-      alt: "Q&A 2",
-    },
-    {
-      src: "/images/qna/3.png",
-      alt: "Q&A 3",
-    },
-    {
-      src: "/images/qna/4.png",
-      alt: "Q&A 4",
-    },
-    {
-      src: "/images/qna/5.png",
-      alt: "Q&A 5",
-    },
-    {
-      src: "/images/qna/6.png",
-      alt: "Q&A 6",
-    },
-    {
-      src: "/images/qna/7.png",
-      alt: "Q&A 7",
-    },
-    {
-      src: "/images/qna/8.png",
-      alt: "Q&A 8",
-    },
-    {
-      src: "/images/qna/9.png",
-      alt: "Q&A 9",
-    },
+  const qnaImages = [
+    [
+      {
+        src: "/images/qna/1.png",
+        alt: "Q&A 1",
+      },
+      {
+        src: "/images/qna/2.png",
+        alt: "Q&A 2",
+      },
+      {
+        src: "/images/qna/3.png",
+        alt: "Q&A 3",
+      },
+    ],
+    [
+      {
+        src: "/images/qna/4.png",
+        alt: "Q&A 4",
+      },
+      {
+        src: "/images/qna/5.png",
+        alt: "Q&A 5",
+      },
+      {
+        src: "/images/qna/6.png",
+        alt: "Q&A 6",
+      },
+      {
+        src: "/images/qna/7.png",
+        alt: "Q&A 7",
+      },
+    ],
+    [
+      {
+        src: "/images/qna/8.png",
+        alt: "Q&A 8",
+      },
+      {
+        src: "/images/qna/9.png",
+        alt: "Q&A 9",
+      },
+    ],
   ];
+
+  const images = qnaImages.flat();
 
   const [currentImageIndex, setCurrentIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -63,27 +71,42 @@ const Question = () => {
   const data = [
     {
       question: "How many topics will be chosen for each session?",
-      answer:
-        "There are three time slots: morning, afternoon, and evening. Each time slot consists of three sessions, and each session has five topics. So, there will be 45 topics in total. You can check the schedule for more details.",
+      answer: (
+        <span>
+          There are three time slots: morning, afternoon, and evening. Each time
+          slot consists of three sessions, and each session has five topics. So,
+          there will be <b>45 topics in total</b>. You can check the schedule
+          for more details.
+        </span>
+      ),
     },
     {
       question: "How to travel to the event venue?",
       answer: (
         <>
-          <div className="flex flex-row flex-wrap justify-evenly gap-[24px]">
-            {images.map((image, index) => (
-              <Image
-                key={index}
-                src={image.src}
-                alt={image.alt}
-                width={2000}
-                height={2000}
-                className="h-auto w-[200px] cursor-pointer"
-                onClick={() => {
-                  setCurrentIndex(index);
-                  setIsLightboxOpen(true);
-                }}
-              />
+          <div className=" flex w-fit flex-col flex-wrap gap-[24px]">
+            {qnaImages.map((images) => (
+              <div
+                key={images.map((i) => i.src).join("jjj")}
+                className="flex  flex-wrap items-center justify-start gap-2"
+              >
+                {images.map((image) => (
+                  <Image
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    width={2000}
+                    height={2000}
+                    className="h-auto w-[70px] cursor-pointer transition duration-150 ease-in-out hover:scale-105 md:w-[150px]"
+                    onClick={() => {
+                      setCurrentIndex(
+                        images.findIndex((img) => img.src === image.src),
+                      );
+                      setIsLightboxOpen(true);
+                    }}
+                  />
+                ))}
+              </div>
             ))}
           </div>
           <Lightbox
@@ -224,7 +247,7 @@ const Question = () => {
                     {item.question}
                   </h4>
                 </div>
-                <p className="pt-[24px] text-mobile-body font-normal">
+                <p className="pt-[24px] text-mobile-body font-normal md:text-desktop-body">
                   {openQuestion.includes(item.question) ? item.answer : ""}
                 </p>
               </div>
