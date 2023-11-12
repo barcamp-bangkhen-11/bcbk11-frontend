@@ -22,7 +22,7 @@ export const scheduleList = [
     title: "Morning sessions",
     list: [
       "Attendees vote for topics to be heard in the afternoon session.",
-      "Each speak session are 50 minutes with 10 minutes break time.",
+      "Each speak session are 25 minutes with 5 minutes break time.",
     ],
   },
   {
@@ -40,7 +40,7 @@ export const scheduleList = [
     title: "Afternoon sessions",
     list: [
       "Attendees vote for topics to be heard in the evening session after 13:30.",
-      "Each speak session are 50 minutes with 10 minutes break time.",
+      "Each speak session are 25 minutes with 5 minutes break time.",
     ],
   },
   {
@@ -56,7 +56,7 @@ export const scheduleList = [
   {
     time: "15:20",
     title: "Evening sessions",
-    list: ["Each speak session are 50 minutes with 10 minutes break time."],
+    list: ["Each speak session are 25 minutes with 5 minutes break time."],
   },
   {
     time: "17:00",
