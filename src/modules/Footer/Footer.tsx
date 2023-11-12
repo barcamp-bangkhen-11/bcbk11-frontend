@@ -13,24 +13,24 @@ const Footer = () => {
       {
         title: "email",
         image: "/images/EnvelopeSimple.svg",
-        href: "",
+        href: "mailto:barcampbangkhen11@gmail.com",
       },
       {
         title: "tiktok",
         image: "/images/TiktokLogo.svg",
-        href: "",
+        href: "https://www.tiktok.com/@barcamp.bangkhen",
       },
     ],
     [
       {
         title: "instagram",
         image: "/images/InstagramLogo.svg",
-        href: "",
+        href: "https://www.instagram.com/barcampbangkhen",
       },
       {
         title: "facebook",
         image: "/images/FacebookLogo.svg",
-        href: "",
+        href: "https://www.facebook.com/Barcampbangkhen",
       },
     ],
   ] as const;
@@ -60,7 +60,7 @@ const Footer = () => {
               {contact.map((pair, idx) => (
                 <div key={idx} className="flex flex-wrap gap-4">
                   {pair.map(({ title, image, href }) => (
-                    <Link href={href} key={title}>
+                    <Link href={href} key={title} target="_blank">
                       <Image
                         className="h-[32px] w-[32px] object-contain hover:opacity-50 md:h-[54px] md:w-[54px]"
                         src={image}

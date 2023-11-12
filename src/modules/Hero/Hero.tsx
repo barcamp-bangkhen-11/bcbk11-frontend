@@ -41,7 +41,8 @@ const Hero = () => {
               </div>
             </div>
             <Link
-              href=""
+              href="https://www.eventpop.me/e/16323/barcampbangkhen11"
+              target="_blank"
               className="inline-flex h-[60px] items-center justify-center rounded-[45px] border-4 border-stone-300 px-[40px] py-5  text-[25px] font-bold  text-white shadow-xl hover:border-white hover:bg-purple-500 hover:drop-shadow-2xl md:h-[76px] md:w-[316px] md:text-[33px]"
             >
               Register Now

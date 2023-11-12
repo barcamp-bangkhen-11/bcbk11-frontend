@@ -30,7 +30,7 @@ const Schedule = () => {
             }}
             cardHeight={50}
             enableBreakPoint
-            verticalBreakPoint={1024}
+            verticalBreakPoint={1200}
           >
             {scheduleList.map((item) => (
               <Box
