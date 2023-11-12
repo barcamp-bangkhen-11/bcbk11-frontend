@@ -42,6 +42,7 @@ const CustomHead = () => {
         name="description"
         content="Share your thoughts, listen to others experiences"
       />
+      <link rel="canonical" href="https://barcampbangkhen.com/" />
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
