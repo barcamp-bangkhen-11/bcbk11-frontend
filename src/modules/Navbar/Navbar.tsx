@@ -11,7 +11,7 @@ const Navbar = () => {
           -webkit-backdrop-filter: blur(10px);
         }
       `}</style>
-      <div className="navbar fixed left-0 top-0 z-50 flex h-20 w-full items-center justify-between bg-[#2623294D] p-5 lg:px-12 lg:py-6">
+      <div className="navbar fixed left-0 top-0 z-[100] flex h-20 w-full items-center justify-between bg-[#2623294D] p-5 lg:px-12 lg:py-6">
         <a href={`#${sections.hero.id}`} className="text-[28px]">
           <Image
             src="/images/bcbk11_small_logo.png"
