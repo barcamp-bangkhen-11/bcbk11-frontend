@@ -42,11 +42,11 @@ const CustomHead = () => {
         name="description"
         content="Share your thoughts, listen to others experiences"
       />
-      <link rel="canonical" href="https://barcampbangkhen.com/" />
+      <link rel="canonical" href="https://www.barcampbangkhen.com" />
 
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://barcampbangkhen.com/" />
+      <meta property="og:url" content="https://www.barcampbangkhen.com" />
       <meta property="og:title" content="Barcamp Bangkhen 11 " />
       <meta
         property="og:description"
@@ -54,12 +54,12 @@ const CustomHead = () => {
       />
       <meta
         property="og:image"
-        content="https://bcbk11-frontend.vercel.app/images/BarcampBangkhen11.png"
+        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11.png"
       />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://barcampbangkhen.com/" />
+      <meta property="twitter:url" content="https://www.barcampbangkhen.com" />
       <meta property="twitter:title" content="Barcamp Bangkhen 11 " />
       <meta
         property="twitter:description"
@@ -67,7 +67,7 @@ const CustomHead = () => {
       />
       <meta
         property="twitter:image"
-        content="https://bcbk11-frontend.vercel.app/images/BarcampBangkhen11.png"
+        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11.png"
       />
 
       {/* favicon */}
