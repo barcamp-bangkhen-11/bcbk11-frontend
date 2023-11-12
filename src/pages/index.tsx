@@ -52,7 +52,10 @@ const CustomHead = () => {
         property="og:description"
         content="Share your thoughts, listen to others experiences"
       />
-      <meta property="og:image" content="/images/BarcampBangkhen11.png" />
+      <meta
+        property="og:image"
+        content="https://bcbk11-frontend.vercel.app/images/BarcampBangkhen11.png"
+      />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -62,7 +65,10 @@ const CustomHead = () => {
         property="twitter:description"
         content="Share your thoughts, listen to others experiences"
       />
-      <meta property="twitter:image" content="/images/BarcampBangkhen11.png" />
+      <meta
+        property="twitter:image"
+        content="https://bcbk11-frontend.vercel.app/images/BarcampBangkhen11.png"
+      />
 
       {/* favicon */}
       <meta name="theme-color" content="#262329" />
