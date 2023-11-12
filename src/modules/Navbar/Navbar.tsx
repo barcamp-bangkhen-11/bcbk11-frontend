@@ -28,7 +28,7 @@ const Navbar = () => {
               <a
                 href={`#${id}`}
                 key={id}
-                className=" hover:text-gray-300 active:text-gray-400"
+                className=" font-semibold hover:text-gray-300 active:text-gray-400"
               >
                 {title}
               </a>
