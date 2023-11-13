@@ -8,7 +8,7 @@ To contribute or set up the project locally, follow these steps:
 
 1. Clone the project repository from GitHub:
 ```bash
-git clone https://github.com/barcamp-bangkhen/frontend.git
+git clone https://github.com/barcamp-bangkhen-11/bcbk11-frontend.git
 ```
 2. Install the required dependencies using npm or yarn:
 ```bash
