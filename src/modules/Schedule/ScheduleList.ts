@@ -66,6 +66,6 @@ export const scheduleList = [
   {
     time: "17:30",
     title: "Party time!",
-    list: ["Awarding session"],
+    list: [],
   },
 ];
