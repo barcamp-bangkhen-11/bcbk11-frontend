@@ -8,8 +8,8 @@ export const scheduleList = [
     ],
   },
   {
-    time: "9:30",
-    title: "End of morning session voting",
+    time: "8:30 - 9:30",
+    title: "morning session voting",
     list: ["We will announce the chosen topics at 10:00."],
   },
   {
@@ -21,40 +21,40 @@ export const scheduleList = [
     time: "10:30",
     title: "Morning sessions",
     list: [
-      "Attendees vote for topics to be heard in the afternoon session.",
       "Each speak session are 25 minutes with 5 minutes break time.",
+      "Attendees vote for topics to be heard in the afternoon session.",
     ],
   },
   {
-    time: "12:10 - 13:10",
+    time: "12:00",
     title: "Lunch break",
     list: [],
   },
   {
-    time: "12:50",
+    time: "12:45",
     title: "End of afternoon session voting",
-    list: ["We will announce the chosen topics at 13:10."],
+    list: ["We will announce the chosen topics at 13:15."],
   },
   {
-    time: "13:10",
+    time: "13:20",
     title: "Afternoon sessions",
     list: [
-      "Attendees vote for topics to be heard in the evening session after 13:30.",
       "Each speak session are 25 minutes with 5 minutes break time.",
+      "Attendees vote for topics to be heard in the evening session.",
     ],
   },
   {
-    time: "14:50 - 15:20",
+    time: "14:50 - 15:30",
     title: "Short break",
     list: [],
   },
   {
-    time: "15:00",
+    time: "15:10",
     title: "End of evening session voting",
-    list: ["End of evening session voting"],
+    list: ["We will announce the chosen topics at 15:30."],
   },
   {
-    time: "15:20",
+    time: "15:30",
     title: "Evening sessions",
     list: ["Each speak session are 25 minutes with 5 minutes break time."],
   },
@@ -66,6 +66,6 @@ export const scheduleList = [
   {
     time: "17:30",
     title: "Party time!",
-    list: ["Awarding session"],
+    list: [],
   },
 ];
