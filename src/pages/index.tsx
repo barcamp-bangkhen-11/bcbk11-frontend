@@ -54,7 +54,7 @@ const CustomHead = () => {
       />
       <meta
         property="og:image"
-        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11.png"
+        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11-v2.png"
       />
 
       {/* <!-- Twitter --> */}
@@ -67,7 +67,7 @@ const CustomHead = () => {
       />
       <meta
         property="twitter:image"
-        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11.png"
+        content="https://www.barcampbangkhen.com/images/BarcampBangkhen11-v2.png"
       />
 
       {/* favicon */}

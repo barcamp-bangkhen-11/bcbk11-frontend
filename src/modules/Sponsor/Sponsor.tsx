@@ -12,13 +12,13 @@ const Sponsor = () => {
       },
       {
         name: "Odd-e",
-        image: "/images/sponsors/[Diamond]Odd-e-crop.png",
+        image: "/images/sponsors/[Diamond]Odd-e-crop-v4.png",
       },
     ],
     platinumAndGold: [
       {
         name: "lnw shop",
-        image: "/images/sponsors/[Gold] logo_Lnw-01-crop.png",
+        image: "/images/sponsors/[Gold] logo_Lnw-01-crop-v3.png",
       },
     ],
     silverAndBronze: [
