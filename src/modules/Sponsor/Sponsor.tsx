@@ -62,7 +62,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className=" h-20 w-fit object-contain object-center md:h-28"
+            className=" h-[72px] w-fit object-contain object-center md:h-24"
           />
         ))}
       </div>
@@ -75,7 +75,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className=" h-16 w-fit object-contain object-center md:h-16 lg:h-24"
+            className=" h-12 w-fit object-contain object-center md:h-16 lg:h-[72px]"
           />
         ))}
       </div>
@@ -87,7 +87,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className="m-4 block h-16 w-auto object-contain object-center md:h-24 lg:hidden"
+            className="m-4 block h-14 w-auto object-contain object-center md:h-20 lg:hidden"
           />
         ))}
       </Marquee>
