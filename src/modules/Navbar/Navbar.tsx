@@ -21,7 +21,7 @@ const Navbar = () => {
             className="h-20 w-20  object-contain"
           />
         </a>
-        <div className="hidden justify-between space-x-20 text-[28px] lg:flex ">
+        <div className=" flex justify-between gap-[4vw] text-[min(4vw,_28px)] md:gap-20 md:text-[28px] ">
           {Object.values(sections)
             .slice(1)
             .map(({ id, title }) => (

@@ -50,7 +50,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className=" h-32 w-fit object-contain object-center md:h-52"
+            className=" h-32  object-contain object-center md:h-52"
           />
         ))}
       </div>
@@ -62,7 +62,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className=" h-[72px] w-fit object-contain object-center md:h-24"
+            className=" h-[72px]  object-contain object-center md:h-24"
           />
         ))}
       </div>
@@ -75,7 +75,7 @@ const Sponsor = () => {
             width={1000}
             height={1000}
             alt={sponsor.name}
-            className=" h-12 w-fit object-contain object-center md:h-16 lg:h-[72px]"
+            className=" h-12 object-contain object-center md:h-16 lg:h-[72px]"
           />
         ))}
       </div>
