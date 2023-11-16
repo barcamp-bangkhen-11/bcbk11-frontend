@@ -13,7 +13,7 @@ const Hero = () => {
         ! FIRST 200 ATTENDEES GET FREE T-SHIRT
       </Marquee>
       <Section id="hero" flexColCenter bgImage>
-        <div className="z-50 mt-8  flex flex-row flex-wrap items-center justify-center lg:mx-[10vw] lg:self-start">
+        <div className="z-50 mt-8 flex  flex-row flex-wrap items-center justify-center bg-slate-950/50 lg:mx-[10vw] lg:self-start">
           <div className="mt-15 flex flex-col items-center justify-center pt-5  md:pt-0">
             <div className="mb-12 text-center text-mobile-h3 font-bold  text-white md:text-desktop-h3 ">
               Share your thoughts,
