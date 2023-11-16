@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <Marquee
         autoFill={true}
-        className=" absolute left-0 top-20 z-10  bg-yellow-500 text-[30px] font-bold text-black md:text-[40px]"
+        className=" absolute left-0 top-36 z-10 -mt-16  bg-yellow-500 text-[30px] font-bold text-black md:text-[40px]"
       >
         ! FIRST 200 ATTENDEES GET FREE T-SHIRT
       </Marquee>
